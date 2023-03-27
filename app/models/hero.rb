@@ -1,5 +1,5 @@
 class Hero < ApplicationRecord
-    belongs_to :hero
-    belongs_to :power
-    validates :strength, inclusion: {in: ['Strong', 'Weak', 'Average']}
+     # Postman or thunderclient use heros 
+     has_many :hero_powers
+     has_many :powers, through: :hero_powers
 end

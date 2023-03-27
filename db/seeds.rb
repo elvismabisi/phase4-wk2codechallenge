@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts 'seeding heroes'
+Hero.create!(name: "Diana", super_name: "wonder woman")
+Hero.create!(name: "Bruce", super_name: "batman")
+Hero.create!(name: "Clark", super_name: "superman")
+
+puts 'seeding powers'
+Power.create!(name: "strength", description: "superhuman strength, insane strength , strength of 50 men in 1 body")
+Power.create!(name: "invisibility", description: "ability to disguise, hide from naked eye")
+Power.create!(name: "speed", description: "insane speed, so fast, faster than lightning")
+
+
+puts 'seeding heropowers...'
+hero_power1 = HeroPower.create(strength: "Above Average", power_id: 1, hero_id:1)
+hero_power2 = HeroPower.create(strength: "Average", power_id: 2, hero_id:2)
+hero_power3 = HeroPower.create(strength: "Weak", power_id: 3, hero_id:3)
+
+puts '✅ Done seeding'
