@@ -12,8 +12,9 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_03_27_095058) do
   create_table "hero_powers", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
+    t.string "strength"
+    t.integer "power_id"
+    t.integer "hero_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,9 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_095058) do
   end
 
   create_table "powers", force: :cascade do |t|
-    t.string "strength"
-    t.integer "power_id"
-    t.integer "hero_id"
+    t.string "name"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
