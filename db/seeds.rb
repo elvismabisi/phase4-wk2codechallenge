@@ -17,8 +17,8 @@ Power.create!(name: "speed", description: "insane speed, so fast, faster than li
 
 
 puts 'seeding heropowers...'
-hero_power1 = HeroPower.create(strength: "Above Average", power_id: 1, hero_id:1)
-hero_power2 = HeroPower.create(strength: "Average", power_id: 2, hero_id:2)
-hero_power3 = HeroPower.create(strength: "Weak", power_id: 3, hero_id:3)
+hero_power1 = HeroPower.create(strength: "Average", power_id: 1, hero_id:1)
+hero_power2 = HeroPower.create(strength: "Weak", power_id: 2, hero_id:2)
+hero_power3 = HeroPower.create(strength: "Strong", power_id: 3, hero_id:3)
 
 puts '✅ Done seeding'

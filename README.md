@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* To be able view the content on would have to go to the following paths:
+  1. /heros
+  2. /powers
+  3. /hero_powers
+
